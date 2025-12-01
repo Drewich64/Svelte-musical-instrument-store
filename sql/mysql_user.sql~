@@ -1,0 +1,4 @@
+USER PASSWORD: KQ%`~V&trn%WX9Lnvp^x
+
+create user "musical_instrument_store_user"@"localhost" identified by "KQ%`~V&trn%WX9Lnvp^x";
+grant all privileges on musical_instrument_store.* to `musical_instrument_store_user`@`localhost`;

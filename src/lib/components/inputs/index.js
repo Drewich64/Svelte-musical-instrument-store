@@ -1,0 +1,1 @@
+export {default as InputNum} from "./number-input.svelte";

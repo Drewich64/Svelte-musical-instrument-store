@@ -1,0 +1,24 @@
+.content__instruments {
+    /* background-color: red; */
+    flex: 1 1 auto;
+}
+.instruments__product {
+    background-color: #F4F4F4;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 6px;
+}
+.product__add-to-cart {
+    width: 30px;
+    margin: 60px 0 0 0;
+    opacity: 0.5;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.product__add-to-cart:hover {
+    opacity: 1;
+}
+
+
+
+
