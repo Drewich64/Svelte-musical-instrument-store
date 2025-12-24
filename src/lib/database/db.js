@@ -1,8 +1,12 @@
-import mysql from "mysql2/promise";
+import {DATABASE_HOST, DATABASE_NAME, DATABASE_USER, DATABASE_PASSWORD} from '$env/static/private';
+import mysql from "mysql2";
+let db = mysql.createPool(
+    {
+        host: DATABASE_HOST,
+        user: DATABASE_USER,
+        password: DATABASE_PASSWORD,
+        database: DATABASE_NAME
+    }
+).promise();
 
-export const db = await mysql.createConnection({
-    host: "127.0.0.1",
-    user: "musical_instrument_store_user",
-    password: "KQ%`~V&trn%WX9Lnvp^x",
-    database: "musical_instrument_store"
-});
+export { db };
