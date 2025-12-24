@@ -9,7 +9,7 @@
 	import ModalWindow from '$lib/components/modal-window/modal-window.svelte';
 	import Header from '$lib/components/header/header.svelte';
 	import '$lib/globalstyles.css';
-	import filter_icon from '$lib/img/filters-icon.ico';
+	import filter_icon from '$lib/img/filters-icon.png';
 	import {page} from "$app/state";
 	import Path from '$lib/components/navigation/path/path.svelte';
 	let data = $props();
@@ -216,6 +216,10 @@
 						</ul>
 					</div>
 				</div>
+				
+			</div>
+			<div class="footer__copyright">
+				<a href="https://www.flaticon.com/free-icons/user" title="user icons">User icons created by Freepik - Flaticon</a>
 			</div>
 		</div>
 	</footer>

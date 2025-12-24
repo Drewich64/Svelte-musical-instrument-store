@@ -138,6 +138,19 @@
         </form>
         </div>
     </div>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__row">
+                <div class="footer__copyright">
+                    <a href="https://www.flaticon.com/free-icons/investment" title="investment icons">Investment icons created by Freepik - Flaticon</a>
+                    <a href="https://www.flaticon.com/free-icons/user" title="user icons">User icons created by Freepik - Flaticon</a>
+                    <a href="https://www.flaticon.com/free-icons/no-photo" title="no photo icons">No photo icons created by Wyasa.Design - Flaticon</a>
+                    <a href="https://www.flaticon.com/free-icons/trash" title="trash icons">Trash icons created by Freepik - Flaticon</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </div>
 
 

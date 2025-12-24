@@ -24,6 +24,15 @@
         <a href="./sign-up" class="register-link">Зареєструватися</a>
     </div>
 </div>
+<footer class="footer">
+    <div class="container footer__container">
+        <div class="footer__row">
+            <div class="footer__copyright">
+                <a href="https://www.flaticon.com/free-icons/man-avatar" title="man avatar icons">Man avatar icons created by Smashicons - Flaticon</a>
+            </div>
+        </div>
+    </div>
+</footer>
 
 
 <style>

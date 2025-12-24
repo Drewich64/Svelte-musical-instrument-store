@@ -10,7 +10,7 @@
     import Header from "$lib/components/header/header.svelte";
     import './style.css';
     import '$lib/globalstyles.css';
-    import filter_icon from "$lib/img/filters-icon.ico";
+    import filter_icon from "$lib/img/filters-icon.png";
     import cart_icon from "$lib/img/header/shopping-cart.png";
     import {cart, addProductToCart} from "$lib/store.svelte";
     import { page } from '$app/state';
@@ -198,6 +198,11 @@
                         </ul>
                     </div>
                 </div>
+            </div>
+            <div class="footer__copyright">
+                <a href="https://www.flaticon.com/free-icons/user" title="user icons">User icons created by Freepik - Flaticon</a>
+                <a href="https://www.flaticon.com/free-icons/smart-cart" title="smart cart icons">Smart cart icons created by Freepik - Flaticon</a>
+                <a href="https://www.flaticon.com/free-icons/list" title="list icons">List icons created by Kiranshastry - Flaticon</a>
             </div>
         </div>
     </footer>
