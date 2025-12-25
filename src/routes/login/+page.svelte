@@ -1,5 +1,6 @@
 <script>
 	import Button from "$lib/components/button/button.svelte";
+    import PasswordInput from "$lib/components/password-input/password_input.svelte";
     import user_login from "$lib/img/user_login.png";
     import "$lib/globalstyles.css";
     import { user } from "$lib/store.svelte";
@@ -16,7 +17,7 @@
         </div>
         <form action="?/login" method="POST" class="form" name="login_form" use:enchance bind:this={form}>
             <input placeholder="Логін" type="text" class="textinput" name="login" value={form?.errors?.user ?? ""}>
-            <input placeholder="Пароль" type="text" class="textinput" name="password" value={form?.errors?.password ?? ""}>
+            <PasswordInput name="password" value={form?.errors?.password ?? ""}/>
             <div class="submin-button__container orangebutton">
                 <Button action={() => {form.submit()}}>{#snippet text()}Увійти{/snippet}</Button>
             </div>

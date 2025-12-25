@@ -1,4 +1,5 @@
 <script>
+    import PasswordInput from "$lib/components/password-input/password_input.svelte";
 	import Button from "$lib/components/button/button.svelte";
     import user_login from "$lib/img/user_login.png";
     import "$lib/globalstyles.css";
@@ -17,7 +18,7 @@
                 <p style="color: green;">Успішно зареєстровано</p>
             {/if}
             <input placeholder="Логін" type="text" class="textinput" name="login" value={form?.errors?.user ?? ""}>
-            <input placeholder="Пароль" type="text" class="textinput" name="password">
+            <PasswordInput name="password"/>
             <input placeholder="Електронна пошта" type="text" class="textinput" name="email" value={form?.errors?.email ?? ""}>
             <input placeholder="Телефон*" type="tel" class="textinput" name="phone" value={form?.errors?.phone ?? ""}>
             {#if form?.errors?.input_data}
