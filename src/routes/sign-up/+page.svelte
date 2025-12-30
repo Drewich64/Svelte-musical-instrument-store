@@ -13,7 +13,7 @@
         <div class="ibg user-login_pic">
             <img src="{user_login}" alt="user">
         </div>
-        <form action="?/register" use:enchance method="POST" class="form" name="signup_form">
+        <form action="?/register" use:enchance method="POST" class="form" name="signup_form" autocomplete="off">
             {#if form?.status == 200} 
                 <p style="color: green;">Успішно зареєстровано</p>
             {/if}

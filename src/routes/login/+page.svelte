@@ -15,7 +15,7 @@
         <div class="ibg user-login_pic">
             <img src="{user_login}" alt="user">
         </div>
-        <form action="?/login" method="POST" class="form" name="login_form" use:enchance bind:this={form}>
+        <form action="?/login" method="POST" class="form" name="login_form" use:enchance bind:this={form} autocomplete="off">
             <input placeholder="Логін" type="text" class="textinput" name="login" value={form?.errors?.user ?? ""}>
             <PasswordInput name="password" value={form?.errors?.password ?? ""}/>
             <div class="submin-button__container orangebutton">

@@ -45,6 +45,7 @@
 										--button-bg-click="#E1882f"
 										--button-color="#eee"
 										--button-radius="6px"
+										disabled={instrument.available <= 0}
 									>
 										{#snippet text()} У кошик {/snippet}</Button>
 								{:else}

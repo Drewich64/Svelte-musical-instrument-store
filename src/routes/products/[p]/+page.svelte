@@ -130,7 +130,7 @@
                         <Product product={product} href="/product/{product.id}">
                             {#snippet controls()}
                                 {@const dis = -1 < cart.current.findIndex((item) => JSON.stringify(item.product) == JSON.stringify(product))}
-                                <Button action={() => addProductToCart(product)} icon={cart_icon} disabled={dis}>
+                                <Button action={() => addProductToCart(product)} icon={cart_icon} disabled={dis || (product.available <= 0)}>
                                 </Button>
                             {/snippet}
                         </Product>

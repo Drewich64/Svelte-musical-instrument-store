@@ -88,8 +88,20 @@ export async function POST({ request, locals }) {
         }
     }
 
+    // check if product counts are valid against amounts in the warehouse
+    for (let i = 0; i < ordered_products.length; i++) {
+        // find the product from the user cart by id
+        let ind = cart.findIndex(item => item.product.id == ordered_products[i].id);
+        if (ind != -1) {
+            if (ordered_products[i].amount < cart[ind].count) {
+                errors.products = "Деяких з продуктів було недостатньо.";
+                return json({status: 400, errors});
+            }
+        }
+    }
+
     cart.map(item => { // checking if the amounts are valid
-        if (item.count < 1) {
+        if (item.count < 1) { // check if cart from the user side has no <= 0 product count
             errors.cart = "Кількість товару у кошику не може бути менше 1.";
             return json({status: 400, errors});
         }
